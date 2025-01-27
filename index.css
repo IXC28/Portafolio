@@ -1,0 +1,264 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+}
+
+
+body {
+    width: auto;
+    height: auto;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    background: url(img/layered-steps-haikei.svg);
+    background-size:auto ;
+}
+
+#nav-container{
+}
+#nav-bar{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    background-color: #9333ea;
+    border-radius: 1rem;
+    
+
+
+}
+.desplegado{
+
+ background-color: #9333ea; 
+    border-radius: 1rem;
+
+}
+.nav-bar-icons{
+    color: black;
+}
+
+.contenedor-primario {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#contenedor{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+#primario-center{
+    justify-content: center;
+}
+
+#title-primario {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    color: white ;
+
+}
+#subtitulo-primario{
+    font-family: 'Inter', sans-serif;
+ color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+}
+
+#container-avatar{
+    padding: 1rem;
+    border: 10px solid #fb0000;
+    border-radius: 20rem;
+}
+
+#avatar{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  height: 15rem;
+ 
+}
+#contenedor-segundario{
+    padding: 1rem;
+    width: 100%;
+
+}
+#imagen2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  #biografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 25rem;
+    background-color: blueviolet;
+    padding: 3rem;
+    border-radius: 3rem;
+    font-family: 'PT Sans', sans-serif;
+    padding: 1rem;
+  }
+  #biografia-txt{
+    font-family: 'Inter', sans-serif;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+h2{
+font-size: 1rem;
+}
+
+.column{
+
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    margin-top: -5rem;
+    padding: 50px 30px;
+    /* border-bottom: 1px solid #000000;
+    border-right: 0px solid #E6ECF8; */
+   border: 1px solid black;
+    border-radius: 2rem;
+    height: 37rem;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    
+}
+
+.img-column{
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    background-color: #00FF97;
+    border-radius: 9rem;
+}
+.section-column{
+    text-align: center;
+}
+.title,h1{
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 2rem;
+font-family: 'PT Sans', sans-serif;
+color: white;
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    vertical-align: inherit;
+    display: flex;
+justify-content: center;
+text-align: center;
+font-size: 1rem;
+color: white;
+}
+.subtitles-column{
+    color: #FF0000;
+    font-size: 1.5rem;
+
+
+}
+p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    
+}
+.img-proyects{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+}
+.img-proyects:hover {
+    
+    -webkit-transform:scale(1.05);transform:scale(1.05);
+    -webkit-transition-duration: 1s;
+}
+
+.contenedor-proyectos-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.section-redes{
+
+}
+#icons-redes{
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes-img{
+    align-items: center;
+    display: flex;
+    width: 4rem;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+
+.redes-img:hover{
+-webkit-transform:scale(1.2);transform:scale(1.2);
+    -webkit-transition-duration: 1s;}
+
+
+
+
+
+  @media(min-width: 430px ){
+    #imagen2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 30rem;
+      }
+      .column{
+        display: inline-block;
+       
+        width: 40%;
+        height: 30rem;
+    }
+    .img-proyects{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 0.5rem;
+    }
+    
+  }
+
+
+  @media (max-width : 760px){
+    #nav-bar{
+        display: none;
+    }
+  }
